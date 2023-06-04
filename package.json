@@ -1,5 +1,5 @@
 {
-  "name": "mc-chat",
+  "name": "mc-chat-exp",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

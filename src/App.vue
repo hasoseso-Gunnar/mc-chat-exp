@@ -1,42 +1,8 @@
 <template>
   <div class="space_for_header">
     <div class="q-pa-md">
-
-      <!-- left menubar -->
-      <q-dialog v-model="dialog" :position="position">
-        <q-card style="width: 250px; height: 100%;">
-          <q-card-section class="items-start no-wrap">
-            <q-btn class="text-weight-bold text-h6 q-mb-sm" flat to="./"><q-icon name="house"></q-icon>　HOME</q-btn>
-            <q-btn class="text-weight-bold text-h6 q-mb-sm" flat to="./thoughts"><q-icon name="menu_book"></q-icon>　THOUGHTS</q-btn>
-            <q-btn class="text-weight-bold text-h6 q-mb-sm" flat to="./studies"><q-icon name="science"></q-icon>　STUDIES</q-btn>
-            <!-- <q-btn class="text-weight-bold text-h6 q-mb-sm" flat to="./requests"><q-icon name="email"></q-icon>　REQUESTS</q-btn> -->
-          </q-card-section>
-        </q-card>
-      </q-dialog>
-
-        <!-- header -->
-        <q-layout view="lHh lpr lFf"  class="shadow-2 rounded-borders">
-            <q-header elevated class="bg-purple">
-            <q-toolbar>
-                <q-btn flat round dense icon="menu" class="q-mr-sm" @click="open('left')"/>
-                <q-avatar>
-                <img src="./assets/my_icon.jpg">
-                </q-avatar>
-    
-                <q-toolbar-title class="title_for_phone">A Man by the Name of Gunnar</q-toolbar-title>
-            </q-toolbar>
-            </q-header>
-
-              <!-- router -->
-              <RouterView />
-
-            <!-- footer -->
-            <!-- <q-footer elevated class="bg-purple">
-              <q-toolbar class="glossy" align="middle">
-                  <q-toolbar-title class="text-subtitle2">© 2022 - 2023. Takumi Gunnar Miura</q-toolbar-title>
-              </q-toolbar>
-          </q-footer> -->
-        </q-layout>
+      <!-- router -->
+      <RouterView />
     </div>
   </div>
 </template>
