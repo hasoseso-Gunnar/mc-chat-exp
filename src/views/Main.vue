@@ -253,7 +253,7 @@ import { useQuasar } from "quasar";
 const $q = useQuasar();
 
 //タブ設定
-const tab = ref<string>('chat');
+const tab = ref<string>('start');
 
 //ラジオボタン設定
 //1ページ目
