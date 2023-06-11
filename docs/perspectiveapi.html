@@ -1,0 +1,26 @@
+<!-- Perspective API widget code -->
+<html>
+ <head>
+  <script src='https://storage.googleapis.com/checker_source/perspective_authorship_widget.js'></script>
+ </head>
+ <body>
+  <textarea id='client_text_area'></textarea>
+  <convai-checker
+     input-id='client_text_area'
+     demo-settings-json="{
+      &quot;gradientColors&quot;: [&quot;#25C1F9&quot;,&quot;#7C4DFF&quot;,&quot;#D400F9&quot;],
+      &quot;toxicScoreThreshold&quot;:&quot;0.7&quot;,
+      &quot;neutralScoreThreshold&quot;:&quot;0.3&quot;,
+      &quot;showFeedbackForNeutralScores&quot;: false,
+      &quot;showFeedbackForLowScores&quot;: false,
+      &quot;feedbackText&quot;: [&quot;x% likely to be toxic. Great job!&quot;,&quot;We're not sure about that.&quot;,&quot;x% likely to be toxic. Please edit.&quot;],
+      &quot;loadingIconStyle&quot;: &quot;circle_square_diamond&quot;,
+      &quot;usePluginEndpoint&quot;: true,
+      & &quot;modelName&quot;: &quot;TOXICITY&quot;,
+      &quot;communityId&quot;: &quot;plugin-user_1610529593886-239823&quot;,
+      &quot;fontFamily&quot;: &quot;Merriweather, serif&quot;
+      }">
+  </convai-checker>
+ </body>
+</html>
+
